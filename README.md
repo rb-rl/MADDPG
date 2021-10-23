@@ -3,6 +3,25 @@ This repository contains a deep reinforcement learning meta agent based on a mul
 
 The MADDPG extends the single-agent [DDPG](https://github.com/rb-rl/DDPG) to multiple agents.
 
+## Environment
+
+The environment is a floor in 3D-space with a tennis court consisting of a net, two rackets and a ball placed on it. It is based on the Unity engine and is provided by Udacity. The continuous states, continuous actions and the rewards for each agent are given as follows:
+
+**State**
+
+- 8 floating point values = position and velocity of own racket and ball
+
+**Action**
+
+- 2 floating point values = position of own racket
+
+**Reward**
+
+- +0.1  = agent hits ball over net
+- -0.01 = agent lets incoming ball hit ground or plays ball out of bounds
+
+The environment is episodic. The return per episode, which is the non-discounted cumulative reward, is referred to as a score. The environment is considered as solved if the maximum of the scores of the two agents averaged over the 100 most recent episodes reaches +0.5.
+
 ## Installation
 
 In order to install the project provided in this repository on Windows 10, follow these steps:
