@@ -20,7 +20,7 @@ The environment is a floor in 3D-space with a tennis court consisting of a net, 
 - +0.1  = agent hits ball over net
 - -0.01 = agent lets incoming ball hit ground or plays ball out of bounds
 
-The environment is episodic. The return per episode, which is the non-discounted cumulative reward, is referred to as a score. The environment is considered as solved if the maximum of the scores of the two agents averaged over the 100 most recent episodes reaches +0.5.
+The environment is episodic. The return of an agent per episode, which is its non-discounted cumulative reward, is referred to as an individual score. The collective score is the maximum of the individual scores of the two agents. The environment is considered as solved if the collective score averaged over the 100 most recent episodes reaches +0.5.
 
 ## Installation
 
