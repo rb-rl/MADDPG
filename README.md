@@ -31,6 +31,14 @@ cd ..\..
 git clone git@github.com:rb-rl/MADDPG.git
 cd MADDPG
 ```
+- Download the [Udacity Unity Tennis environment](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86_64.zip)
+- Unzip the zip file into the folder `MADDPG` such that the `Tennis.exe` in the zip file has the relative path `MADDPG\Tennis_Windows_x86_64\Tennis.exe`
+- Start a jupyter notebook with the following command:
+```
+jupyter notebook
+```
+- Open `Main.ipynb`
+- In the Jupyter notebook, select `Kernel -> Change Kernel -> drlnd`
 
 ## Usage
 
