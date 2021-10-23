@@ -34,4 +34,4 @@ cd MADDPG
 
 ## Usage
 
-In order to do the training and inference by yourself, simply open [Main.ipynb](Main.ipynb) and sucsessively execute the Jupyter Notebook cells by pressing `Shift+Enter`.
+In order to do the training and inference by yourself, simply open [Main.ipynb](Main.ipynb) and successively execute the Jupyter Notebook cells by pressing `Shift+Enter`.
