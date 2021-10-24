@@ -13,7 +13,7 @@ The environment is a floor in 3D-space with a tennis court consisting of a net, 
 
 **Action**
 
-- 2 floating point values = position of own racket
+- 2 floating point values in [-1,1] = position of own racket
 
 **Reward**
 
