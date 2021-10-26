@@ -9,7 +9,9 @@ The environment is a floor in 3D-space with a tennis court consisting of a net, 
 
 **State**
 
-- 8 floating point values = position and velocity of own racket and ball
+- 24 floating point values with following shape:  
+  - 3 covered time stamps
+  - 8 floating point values per covered time stamp = position and velocity of own racket and ball  
 
 **Action**
 
