@@ -13,7 +13,7 @@ The environment is a floor in 3D-space with a tennis court consisting of a net, 
   - 3 covered time stamps
   - 8 floating point values per covered time stamp = position and velocity of own racket and ball  
 
-Note that the current time stamp, consisting of 8 floating point values, is written in the Python index range [16:24] of the 24 value state. In the next timestamp, these 8 floating point values are moved to the range [8:16] and afterwards to [0:8].
+Note that the current time stamp, consisting of 8 floating point values, is written in the Python index range [16:24] of the 24 values state. In the next timestamp, these 8 floating point values are moved to the range [8:16] and afterwards to [0:8].
 
 **Action**
 
