@@ -19,6 +19,8 @@ Note that the current time stamp, consisting of 8 floating point values, is writ
 
 - 2 floating point values in [-1,1] = position of own racket
 
+Note that the action [0,0] does not lead to a fixed position, but the environment also contains a slight noise on the rackets.
+
 **Reward**
 
 - +0.1  = agent hits ball over net
