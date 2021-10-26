@@ -10,7 +10,7 @@ The environment is a floor in 3D-space with a tennis court consisting of a net, 
 **State**
 
 - 24 floating point values with following shape:  
-  - 3 covered time stamps
+  - 3 covered time stamps (the current time stamp is written in the Python index range [16:24] of the 24 floats and then moved to [8:16] and afterwards to [0:8])
   - 8 floating point values per covered time stamp = position and velocity of own racket and ball  
 
 **Action**
