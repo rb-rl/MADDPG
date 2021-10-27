@@ -48,6 +48,32 @@ where `W` stands for the Wiener process and is a 4-vector for each update step d
 
 Also, a replay memory is used, which can store 10000 elements, where the oldest elements are discared if the limit of the memory is reached.
 
+## Hyperparameters
+
+A summary of the hyperparameters used to solve the environment is given in the following. The summary is split into a table of the selected values and a detailed description of the meaning of the hyperparameters.
+
+### Agent
+- `α = The learning rate, where higher values mean that the multi-agent learns faster`
+- `γ = The discount factor in [0, 1], where higher values mean a stronger influence of future rewards on the now`
+- `ε interval = The interval in which epsilon decay can take place`
+- `ε decay factor = The epsilon decay factor in [0, 1], where higher values mean a slower decay`
+- `batch size = The mini-batch size, i.e. the number of samples simultaneously used in backpropagation`
+- `loss = The loss function to be optimized in gradient descent`
+- `τ = The soft-update rate in [0, 1], where higher values mean that the target networks becomes equal to the normal networks faster`
+- `frames per update = The number of frames which have to pass for a soft-update step of the target networks`
+- `θ = The decay rate of the Ornstein-Uhlenbeck noise in [0, 1], where higher values mean a faster decay`
+
+### Replay memory
+- `max replay memory size = The maximally possible size of the replay memory`
+
+### Neural networks
+- `activation function = The activation function of the hidden layers`
+- `actor number of hidden layers = The number of hidden layers in each of the actor neural networks`
+- `actor hidden neurons per hidden layer = The number of neurons per hidden layer in the actors`
+- `critic number of hidden layers = The number of hidden layers in each of the critic neural networks`
+- `critic hidden neurons per hidden layer = The number of neurons per hidden layer in the critics`
+- `use batch normalization = Determines whether batch normalization is activated`
+
 ### References
 
 [1] Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments, 2017, [arxiv.org/pdf/1706.02275.pdf](https://arxiv.org/pdf/1706.02275.pdf)  
