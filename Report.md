@@ -22,7 +22,7 @@ with the soft update rate `τ`. Note that this update is not performed every fra
 
 The first of the two action-value function types `Q_i(o_1, o_2, ..., a_1, a_2, ...)` and `Q_i'(o_1, o_2, ..., a_1, a_2, ...)` is updated by backpropagation with the loss
 
-`L_critic_i = (r_i + γ * Q_i'(o_1', o_2', ..., π_1'(o_1), π_2'(o_2), ...) - Q_i(o_1, o_2, ..., a_1, a_2, ...))^2`
+`L_critic_i = (r_i + γ * Q_i'(o_1', o_2', ..., π_1'(o_1'), π_2'(o_2'), ...) - Q_i(o_1, o_2, ..., a_1, a_2, ...))^2`
 
 averaged over also a mini-batch, where `r_i` is the reward when going from the current observation `o_i` to the next observation `o_i'` of the agent with index `i` and `γ` is the discount factor.
 
