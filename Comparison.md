@@ -12,10 +12,15 @@ https://user-images.githubusercontent.com/92691697/139150068-55d8be23-a504-4d5e-
 
 ## Comparison
 
+When comparing [Main.ipynb](Main.ipynb) and [Main_DDPG.ipynb](Main_DDPG.ipynb), we see that the MADDPG multi-agent takes 5044 episodes to solve the environment, whereas the self-playing DDPG agent needs only 2597 episodes and is thus trains significantly faster:
+
 ![Episodes_Number](https://user-images.githubusercontent.com/92691697/139137963-b1550f11-4c6b-494a-9efb-51f1e0805c8c.PNG)
+![Episodes_Number_DDPG](https://user-images.githubusercontent.com/92691697/139150646-d56b9884-3612-4068-aa17-dd1f450dc32d.PNG)
+
+This can also be seen in the plots of the average collective scores:
 
 ![Score](https://user-images.githubusercontent.com/92691697/139138187-b2e1c1f0-3ea5-44eb-a6d1-e8207cc738c2.PNG)
-
+![Score_DDPG](https://user-images.githubusercontent.com/92691697/139150656-06262acc-8a85-4b09-b61d-fae2516e8336.PNG)
 
 ## Installation
 
