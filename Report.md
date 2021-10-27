@@ -76,7 +76,7 @@ A summary of the hyperparameters used to solve the environment is given in the f
 
 ## Limitation
 
-When looking at the policies `π_i(o_i)` and `π_i'(o_i)` as well as action-value functions `Q_i(o_1, o_2, ..., a_1, a_2, ...)` and `Q_i'(o_1, o_2, ..., a_1, a_2, ...)`, we observe a nonlocal behavior. Although each policy takes only the observation `o_i` of the corresponding agent `i`, each action-value function need the observations and actions of all agents in the multi-agent. Therefore, the action-value functions are nonlocal. As these functions enter the training process of the agents of the multi-agent, each agent is trained as if it can access the observations of all agents. This makes the training unnatural from a biological perspective, where observations cannot be exchanged between animals. However, at least the inference is local.
+When looking at the policies `π_i(o_i)` and `π_i'(o_i)` as well as action-value functions `Q_i(o_1, o_2, ..., a_1, a_2, ...)` and `Q_i'(o_1, o_2, ..., a_1, a_2, ...)`, we observe a nonlocal behavior. Although each policy takes only the observation `o_i` of the corresponding agent `i`, each action-value functions need the observations and actions of all agents in the multi-agent. Therefore, the action-value functions are nonlocal. As these functions enter the training process of the agents of the multi-agent, each agent is trained as if it can access the observations of all agents. This makes the training unnatural from a biological perspective, where observations cannot be exchanged between animals. However, at least the inference is local.
 
 ### References
 
