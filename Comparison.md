@@ -17,7 +17,7 @@ When comparing [Main.ipynb](Main.ipynb) and [Main_DDPG.ipynb](Main_DDPG.ipynb), 
 ![Episode_Number](https://user-images.githubusercontent.com/92691697/139151306-55bcce5f-018b-481a-9555-90f99b4f9d7c.PNG)
 ![Episode_Number_DDPG](https://user-images.githubusercontent.com/92691697/139151316-d7d45fe0-4b35-446d-a2d5-4e651108052b.PNG)
 
-This can also be seen in the plots of the average collective scores:
+This can also be seen in the plots of the average collective scores (upper=MADDPG, lower=self-playing DDPG):
 
 ![Score](https://user-images.githubusercontent.com/92691697/139151492-02e9e30c-76da-44a3-b090-d700e7363aa8.PNG)
 ![Score_DDPG](https://user-images.githubusercontent.com/92691697/139151499-85c75423-6acb-4c91-a32b-c092e847109a.PNG)
