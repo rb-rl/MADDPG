@@ -32,7 +32,7 @@ The environment is episodic. The return of an agent per episode, which is its no
 
 The repository adresses both training and inference of the agent. The training process can be observed in a Unity window, as shown in the following video.
 
-
+https://user-images.githubusercontent.com/92691697/139115332-5475871a-4917-45e4-972e-b6813504fe51.mp4
 
 When the training is stopped, the actor and critic neural networks of the two agents are stored in the files called agent_0_actor.pt, agent_0_critic.pt, agent_1_actor.pt and agent_1_critic.pt.
 
