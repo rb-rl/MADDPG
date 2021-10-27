@@ -46,6 +46,10 @@ For the action-value functions `Q_i(o_1, o_2, ..., a_1, a_2, ...)` and `Q_i'(o_1
 
 with 3 hidden layers. The hidden layers of all architectures have the `rectified linear unit` (=relu) as the activation function. The output layers of the policy networks have a `tanh` activation function whereas the output layers of the deep Q-networks are purely linear.
 
+### Backpropagation
+
+Backpropagation of the neural networks behind the policies `π_i(o_i)` and action-value functions `Q_i(o_1, o_2, ..., a_1, a_2, ...)` is done with mini-batch gradient descent based on the the learning rate `α=0.001` and `batch size=64`. The optimizer used for that purpose is an Adam optimizer.
+
 ### Policy
 
 The policy of the `i`-th agent is based on using the policy network `π_i(o_i)` in combination with a noise `N`:
