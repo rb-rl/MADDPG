@@ -28,6 +28,20 @@ Note that the trivial action value (0, 0) does not lead to a fixed position, but
 
 The environment is episodic. The return of an agent per episode, which is its non-discounted cumulative reward, is referred to as an individual score. The collective score is the maximum of the individual scores of the two agents. The environment is considered as solved if the collective score averaged over the 100 most recent episodes reaches +0.5.
 
+## Demo
+
+The repository adresses both training and inference of the agent. The training process can be observed in a Unity window, as shown in the following video.
+
+
+
+When the training is stopped, the actor and critic neural networks of the two agents are stored in the files called agent_0_actor.pt, agent_0_critic.pt, agent_1_actor.pt and agent_1_critic.pt.
+
+The files [agent_0_actor.pt](agent_0_actor.pt), [agent_0_critic.pt](agent_0_critic.pt), [agent_1_actor.pt](agent_1_actor.pt) and [agent_1_critic.pt](agent_1_critic.pt) provided in this repository are the neural networks of a successfully trained multi-agent.
+
+The application of the multi-agent on the environment, i.e. the inference process, can also be observed in a Unity window with this repository:
+
+
+
 ## Installation
 
 In order to install the project provided in this repository on Windows 10, follow these steps:
