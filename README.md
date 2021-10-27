@@ -1,7 +1,7 @@
 # MADDPG
 This repository contains a deep reinforcement learning multi-agent based on a multi-agent deep deterministic policy gradient (=MADDPG) used for two actors playing tennis in a 3D Unity environment.
 
-The MADDPG extends the single-agent [DDPG](https://github.com/rb-rl/DDPG) to multiple agents.
+The MADDPG extends the single-agent [DDPG](https://github.com/rb-rl/DDPG) to multiple agents. In [Comparison.md](https://github.com/rb-rl/MADDPG/blob/main/Comparison.md), this extension is compared to alternative approach based on a self-playing DDPG agent.
 
 ## Environment
 
