@@ -107,7 +107,7 @@ A summary of the hyperparameters used to solve the environment is given in the f
 - `actor hidden neurons per hidden layer = The number of neurons per hidden layer in the actors`
 - `critic number of hidden layers = The number of hidden layers in each of the critic neural networks`
 - `critic hidden neurons per hidden layer = The number of neurons per hidden layer in the critics`
-- `use batch normalization = Determines whether batch normalization is activated`
+- `use batch normalization = Determines whether batch normalization on the observation inputs of the actors and critics is activated`
 
 ## Limitation
 
