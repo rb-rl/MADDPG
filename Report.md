@@ -113,6 +113,16 @@ A summary of the hyperparameters used to solve the environment is given in the f
 - `critic hidden neurons per hidden layer = The number of neurons per hidden layer in the critics`
 - `use batch normalization = Determines whether batch normalization on the observation inputs of the actors and critics is activated`
 
+## Solution
+
+As explained in the [README.md](README.md), the environment is considered as solved, if the average collective score over 100 consecutive episodes is at least +0.5. A solution of the environment was achieved in 5044 episodes, as shown by the following screenshot from the [Jupyter notebook](Main.ipynb):
+
+
+
+The collective score per episode over the training process is shown in the following screenshot. This score is defined as the maximum of the individual scores of the two agents. An individual score is the non-discounted return, i.e. cumulative reward per episode.
+
+
+
 ## Limitation
 
 When looking at the policies `π_i(o_i)` and `π_i'(o_i)` as well as action-value functions `Q_i(o_1, o_2, ..., a_1, a_2, ...)` and `Q_i'(o_1, o_2, ..., a_1, a_2, ...)`, we observe a nonlocal behavior. Although each policy takes only the observation `o_i` of the corresponding agent `i`, each action-value functions need the observations and actions of all agents in the multi-agent. Therefore, the action-value functions are nonlocal. As these functions enter the training process of the agents of the multi-agent, each agent is trained as if it can access the observations of all agents. This makes the training unnatural from a biological perspective, where observations cannot be exchanged between animals. However, at least the inference is local.
