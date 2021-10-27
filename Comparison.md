@@ -19,8 +19,8 @@ When comparing [Main.ipynb](Main.ipynb) and [Main_DDPG.ipynb](Main_DDPG.ipynb), 
 
 This can also be seen in the plots of the average collective scores:
 
-![Score](https://user-images.githubusercontent.com/92691697/139138187-b2e1c1f0-3ea5-44eb-a6d1-e8207cc738c2.PNG)
-![Score_DDPG](https://user-images.githubusercontent.com/92691697/139150656-06262acc-8a85-4b09-b61d-fae2516e8336.PNG)
+![Score](https://user-images.githubusercontent.com/92691697/139151492-02e9e30c-76da-44a3-b090-d700e7363aa8.PNG)
+![Score_DDPG](https://user-images.githubusercontent.com/92691697/139151499-85c75423-6acb-4c91-a32b-c092e847109a.PNG)
 
 ## Installation
 
