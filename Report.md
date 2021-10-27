@@ -66,6 +66,27 @@ Also, a replay memory is used, which can store 10000 elements, where the oldest 
 
 A summary of the hyperparameters used to solve the environment is given in the following. The summary is split into a table of the selected values and a detailed description of the meaning of the hyperparameters.
 
+### Selected Values
+
+- `α = 0.001`
+- `γ = 0.99`
+- `ε interval = [0.2, 0.2]`
+- `ε decay factor = 1`
+- `batch size = 64`
+- `loss = mse`
+- `τ = 0.01`
+- `frames per update = 4`
+- `θ = 0.2`
+
+- `max replay memory size = 100000`
+
+- `activation function = relu`
+- `actor number of hidden layers = 2`
+- `actor hidden neurons per hidden layer = 64`
+- `critic number of hidden layers = 3`
+- `critic hidden neurons per hidden layer = 64`
+- `use batch normalization = False` (activating batch normalization decreases the learning performance)
+
 ### Agent
 - `α = The learning rate, where higher values mean that the multi-agent learns faster`
 - `γ = The discount factor in [0, 1], where higher values mean a stronger influence of future rewards on the now`
