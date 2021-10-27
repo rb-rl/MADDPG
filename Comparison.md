@@ -22,6 +22,8 @@ This can also be seen in the plots of the average collective scores:
 ![Score](https://user-images.githubusercontent.com/92691697/139151492-02e9e30c-76da-44a3-b090-d700e7363aa8.PNG)
 ![Score_DDPG](https://user-images.githubusercontent.com/92691697/139151499-85c75423-6acb-4c91-a32b-c092e847109a.PNG)
 
+The reason for the better training performance is, of course, the symmetry of the environment.
+
 ## Installation
 
 In order to install the self-playing DDPG agent, simply follow the installation instructions of [DDPG](https://github.com/rb-rl/DDPG/blob/main/README.md) and copy the file [Main_DDPG.ipynb](Main_DDPG.ipynb) provided from the present repository to the DDPG repository.
