@@ -32,6 +32,20 @@ The second action-value function type is updated via a soft update according to
 
 similar to the replacement rule (1) and with the same frequency.
 
+### Network topology
+
+Each of the policies `π_i(o_i)` and `π_i'(o_i)` is represented by a fully connected neural network consisting of 2 hidden layers with 64 neurons per layer, yielding the network architecture
+
+`24 -> 64 -> 64 -> 2`
+
+The numbers 24 and 2 come from the sizes of the observation and action spaces, because a policy network takes an observation as an input and outputs an action.
+
+For the action-value functions `Q_i(o_1, o_2, ..., a_1, a_2, ...)` and `Q_i'(o_1, o_2, ..., a_1, a_2, ...)`, the inputs are observations and actions while the outputs are the scalar Q-values. As the observations and actions are concatenated when entering the corresponding neural network, this yields the in- and output sizes 52 (=2*(24+2)) and 1. The fully connected network architectures chosen for the deep Q-networks are therefore similar to the one shown above, but now of the form
+
+`52 -> 64 -> 64 -> 64 -> 1`
+
+with 3 hidden layers. The hidden layers of all architectures have the `rectified linear unit` (=relu) as the activation function. The output layers of the policy networks have a `tanh` activation function whereas the output layers of the deep Q-networks are purely linear.
+
 ### Policy
 
 The policy of the `i`-th agent is based on using the policy network `π_i(o_i)` in combination with a noise `N`:
