@@ -115,7 +115,7 @@ A summary of the hyperparameters used to solve the environment is given in the f
 
 ## Solution
 
-As explained in the [README.md](README.md), the environment is considered as solved, if the average collective score over 100 consecutive episodes is at least +0.5. A solution of the environment was achieved in 5044 episodes, as shown by the following screenshot from the [Jupyter notebook](Main.ipynb):
+As explained in the [README.md](README.md), the environment is considered as solved, if the average collective score over 100 consecutive episodes is at least +0.5. A solution of the environment was achieved in 5044 episodes, as shown by the following screenshot from [Main.ipynb](Main.ipynb):
 
 ![Episodes_Number](https://user-images.githubusercontent.com/92691697/139137963-b1550f11-4c6b-494a-9efb-51f1e0805c8c.PNG)
 
