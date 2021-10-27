@@ -10,6 +10,13 @@ The application of the DDPG agent on the environment, i.e. the inference process
 
 https://user-images.githubusercontent.com/92691697/139150068-55d8be23-a504-4d5e-b69b-975f7298473b.mp4
 
+## Comparison
+
+![Episodes_Number](https://user-images.githubusercontent.com/92691697/139137963-b1550f11-4c6b-494a-9efb-51f1e0805c8c.PNG)
+
+![Score](https://user-images.githubusercontent.com/92691697/139138187-b2e1c1f0-3ea5-44eb-a6d1-e8207cc738c2.PNG)
+
+
 ## Installation
 
 In order to install the self-playing DDPG agent, simply follow the installation instructions of [DDPG](https://github.com/rb-rl/DDPG/blob/main/README.md) and copy the file [Main_DDPG.ipynb](Main_DDPG.ipynb) provided from the present repository to the DDPG repository.
