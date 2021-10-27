@@ -117,11 +117,11 @@ A summary of the hyperparameters used to solve the environment is given in the f
 
 As explained in the [README.md](README.md), the environment is considered as solved, if the average collective score over 100 consecutive episodes is at least +0.5. A solution of the environment was achieved in 5044 episodes, as shown by the following screenshot from the [Jupyter notebook](Main.ipynb):
 
-
+![Episodes_Number](https://user-images.githubusercontent.com/92691697/139137963-b1550f11-4c6b-494a-9efb-51f1e0805c8c.PNG)
 
 The collective score per episode over the training process is shown in the following screenshot. This score is defined as the maximum of the individual scores of the two agents. An individual score is the non-discounted return, i.e. cumulative reward per episode.
 
-![Episodes_Number](https://user-images.githubusercontent.com/92691697/139137963-b1550f11-4c6b-494a-9efb-51f1e0805c8c.PNG)
+![Score](https://user-images.githubusercontent.com/92691697/139138187-b2e1c1f0-3ea5-44eb-a6d1-e8207cc738c2.PNG)
 
 ## Limitation
 
