@@ -12,7 +12,7 @@ https://user-images.githubusercontent.com/92691697/139150068-55d8be23-a504-4d5e-
 
 ## Installation
 
-In order to install the self-playing DDPG agent, simply follow the installation instructions of [DDPG](https://github.com/rb-rl/DDPG/blob/main/README.md) and copy the file Main_DDPG.ipynb provided from the present repository to the DDPG repository.
+In order to install the self-playing DDPG agent, simply follow the installation instructions of [DDPG](https://github.com/rb-rl/DDPG/blob/main/README.md) and copy the file [Main_DDPG.ipynb](Main_DDPG.ipynb) provided from the present repository to the DDPG repository.
 
 ## Usage
 
