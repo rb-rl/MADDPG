@@ -86,6 +86,7 @@ The suggested improvements are the following ones:
 - Continued manual adjustment of the hyperparameters: A certain amount of manual hyperparameter tuning (including network topology) was invested in this project. However, the upper limit has not yet been reached here. Unfortunetly, the tweaking of the hyperparameters becomes the more time intensive, the more fine-tuned they are.
 - Auto machine learning: The hyperparameters can also be tuned automatically by performing a grid search or even better a random search.
 - Modification of amount past is covered by observation space: The neural networks provided in this repository are time delay neural networks, because the observations consist of stacks of 3 frames. By storing these frames in a separate memory, it would be easily possible to change the stack size and introduce it as a hyperparameter which could be optimized.
+- Policy ensembles: According to [1], robustness could be improved by using policy ensembles for each agent of the multi-agent.
 - Recurrent neural networks: By using recurrent layers, the past states could be handled beyond mere time delay neural networks.
 - Prioritized replay memory: The replay memory used in this project is not prioritized such that there is an improvement option.
 - Distributed Distributional MADDPG [3]: In DDPG, every state, action pair (s,a) has only a single scalar value Q. Distributional approaches extend this by providing a distribution over multiple Q-values. Such an extension is also possible for MADDPG.
