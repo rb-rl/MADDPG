@@ -132,6 +132,7 @@ When looking at the policies `π_i(o_i)` and `π_i'(o_i)` as well as action-valu
 Although the environment has been solved by the present approach, there are several possible ways to make improvements. Such improvements will impact in how many episodes the average collective score of +0.5 mentioned above is reached. And they will also affect the maximum average collective score reachable if the training would continue indefinitely.
 
 The suggested improvements are the following ones:
+- Exploitation of symmetry: As both agents solve the same tasks, the number of training parameters could be reduced by using the same actor network for both agents. 
 - Continued manual adjustment of the hyperparameters: A certain amount of manual hyperparameter tuning (including network topology) was invested in this project. However, the upper limit has not yet been reached here. Unfortunetly, the tweaking of the hyperparameters becomes the more time intensive, the more fine-tuned they are.
 - Auto machine learning: The hyperparameters can also be tuned automatically by performing a grid search or even better a random search.
 - Modification of amount past is covered by observation space: The neural networks provided in this repository are time delay neural networks, because the observations consist of stacks of 3 frames. By storing these frames in a separate memory, it would be easily possible to change the stack size and introduce it as a hyperparameter which could be optimized.
