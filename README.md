@@ -5,15 +5,15 @@ The MADDPG extends the single-agent [DDPG](https://github.com/rb-rl/DDPG) to mul
 
 ## Environment
 
-The environment is a floor in 3D-space with a tennis court consisting of a net, two rackets and a ball placed on it. It is based on the Unity engine and is provided by Udacity. The continuous states, continuous actions and the rewards for each agent are given as follows:
+The environment is a floor in 3D-space with a tennis court consisting of a net, two rackets and a ball placed on it. It is based on the Unity engine and is provided by Udacity. The continuous observations, continuous actions and the rewards for each agent are given as follows:
 
-**State**
+**Observation**
 
 - 24 floating point values with following shape:  
   - 3 covered time stamps
   - 8 floating point values per covered time stamp = position and velocity of own racket and ball  
 
-Note that the current time stamp, consisting of 8 floating point values, is written in the Python index range [16:24] of the 24 values state. In the next timestamp, these 8 floating point values are moved to the range [8:16] and afterwards to [0:8].
+Note that the current time stamp, consisting of 8 floating point values, is written in the Python index range [16:24] of the 24 values observation. In the next timestamp, these 8 floating point values are moved to the range [8:16] and afterwards to [0:8].
 
 **Action**
 
