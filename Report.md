@@ -8,7 +8,7 @@ The reinforcement learning multi-agent used in this project is based on a multi-
 
 ### Actor Updates
 
-In this approach, two policies `π_i(o_i)` and `π_i'(o_i)` as well as two action-value functions `Q_i(o_1, o_2, ..., a_1, a_2, ...)` and `Q_i'(o_1, o_2, ..., a_1, a_2, ...)` are used per agent, where `i` is the index of the agent in the multi-agent, `o_1, o_2, ...` are the observations and `a_1, a_2, ...` the actions of the agents in the multi-agent. Each of these functions is approximated by its own neural network as described further below. The first of the two policy types is updated by backpropagation based on the loss
+In this approach, two policies `π_i(o_i)` and `π_i'(o_i)` as well as two action-value functions `Q_i(o_1, o_2, ..., a_1, a_2, ...)` and `Q_i'(o_1, o_2, ..., a_1, a_2, ...)` are used per agent, where `i` is the index of the agent in the multi-agent, `o_1, o_2, ...` are the observations and `a_1, a_2, ...` the actions of the agents in the multi-agent. Note that in contrast to [DDPG](https://github.com/rb-rl/DDPG), we have observations and not states, because each agent only observes a part of the environment and can therefore not define the whole state of the environment. Each of the functions above is approximated by its own neural network as described further below. The first of the two policy types is updated by backpropagation based on the loss
 
 `L_actor_i = - Q_i(o_1, o_2, ..., a_1, ..., a_{i-1}, π_i(o_i), a_{i+1}, ...)`
 
