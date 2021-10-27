@@ -78,6 +78,20 @@ A summary of the hyperparameters used to solve the environment is given in the f
 
 When looking at the policies `π_i(o_i)` and `π_i'(o_i)` as well as action-value functions `Q_i(o_1, o_2, ..., a_1, a_2, ...)` and `Q_i'(o_1, o_2, ..., a_1, a_2, ...)`, we observe a nonlocal behavior. Although each policy takes only the observation `o_i` of the corresponding agent `i`, each action-value functions need the observations and actions of all agents in the multi-agent. Therefore, the action-value functions are nonlocal. As these functions enter the training process of the agents of the multi-agent, each agent is trained as if it can access the observations of all agents. This makes the training unnatural from a biological perspective, where observations cannot be exchanged between animals. However, at least the inference is local.
 
+## Ideas for improvements
+
+Although the environment has been solved by the present approach, there are several possible ways to make improvements. Such improvements will impact in how many episodes the average collective score of +0.5 mentioned above is reached. And they will also affect the maximum average collective score reachable if the training would continue indefinitely.
+
+The suggested improvements are the following ones:
+- Continued manual adjustment of the hyperparameters: A certain amount of manual hyperparameter tuning (including network topology) was invested in this project. However, the upper limit has not yet been reached here. Unfortunetly, the tweaking of the hyperparameters becomes the more time intensive, the more fine-tuned they are.
+- Auto machine learning: The hyperparameters can also be tuned automatically by performing a grid search or even better a random search.
+- Modification of past covered by state space: The neural networks provided in this repository are time delay neural networks, because the observations consist of stacks of 3 frames. By storing these frames in a separate memory, it would be easily possible to change the stack size and introduce it as a hyperparameter which could be optimized.
+- Recurrent neural networks: By using recurrent layers, the past states could be handled beyond mere time delay neural networks.
+- Prioritized replay memory: The replay memory used in this project is not prioritized such that there is an improvement option.
+- Distributed Distributional MADDPG: In DDPG, every state, action pair (s,a) has only a single scalar value Q. Distributional approaches extend this by providing a distribution over multiple Q-values. Such an extension is also possible for MADDPG.
+- Twin Delayed Multi-Agent Deep Deterministic (=TD3): DDPG can be extended by using the two action-value functions in a different way, having the policy network being soft-updated at a lower rate than the deep Q-network and by introducing an extra noise in the loss of the critic. This can be generalized to MADDPG.
+- Attention: Primarily used in natural language processing, attention layers could also be explored in this context of this project.
+
 ### References
 
 [1] Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments, 2017, [arxiv.org/pdf/1706.02275.pdf](https://arxiv.org/pdf/1706.02275.pdf)  
