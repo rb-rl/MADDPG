@@ -32,6 +32,22 @@ The second action-value function type is updated via a soft update according to
 
 similar to the replacement rule (1) and with the same frequency.
 
+### Policy
+
+The policy of the `i`-th agent is based on using the policy network `π_i(o_i)` in combination with a noise `N`:
+
+`a_i = π_i(o_i) + N`
+
+The noise is given by an Ornstein-Uhlenbeck process [2], i.e. it is updated according to
+
+`N <- (1 - θ) * N + ε * W`
+
+where `W` stands for the Wiener process and is a 4-vector for each update step distributed according to a multivariate Gaussian. The constant `θ` is the decay rate of the noise and `ε` is the standard deviation of the newly added noise.
+
+### Replay memory
+
+Also, a replay memory is used, which can store 10000 elements, where the oldest elements are discared if the limit of the memory is reached.
+
 ### References
 
 [1] Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments, 2017, [arxiv.org/pdf/1706.02275.pdf](https://arxiv.org/pdf/1706.02275.pdf)  
