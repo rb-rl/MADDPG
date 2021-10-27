@@ -121,7 +121,7 @@ As explained in the [README.md](README.md), the environment is considered as sol
 
 The collective score per episode over the training process is shown in the following screenshot. This score is defined as the maximum of the individual scores of the two agents. An individual score is the non-discounted return, i.e. cumulative reward per episode.
 
-
+![Episodes_Number](https://user-images.githubusercontent.com/92691697/139137963-b1550f11-4c6b-494a-9efb-51f1e0805c8c.PNG)
 
 ## Limitation
 
