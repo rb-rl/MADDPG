@@ -18,6 +18,20 @@ averaged over a mini-batch. The second policy type is updated via a soft update 
 
 with the soft update rate `τ`. Note that this update is not performed every frame but only every `frames per update` frame.
 
+### Critic Updates
+
+The first of the two action-value function types `Q_i(o_1, o_2, ..., a_1, a_2, ...)` and `Q_i'(o_1, o_2, ..., a_1, a_2, ...)` is updated by backpropagation with the loss
+
+`L_critic_i = (r_i + γ * Q_i'(o_1', o_2', ..., π_1'(o_1), π_2'(o_2), ...) - Q_i(o_1, o_2, ..., a_1, a_2, ...))^2`
+
+averaged over also a mini-batch, where `r_i` is the reward when going from the current observation `o_i` to the next observation `o_i'` of the agent with index `i` and `γ` is the discount factor.
+
+The second action-value function type is updated via a soft update according to
+
+`Q_i'(o_1, o_2, ..., a_1, a_2, ...) <- (1 - τ) * Q_i'(o_1, o_2, ..., a_1, a_2, ...) + τ * Q_i(o_1, o_2, ..., a_1, a_2, ...)`
+
+similar to the replacement rule (1) and with the same frequency.
+
 ### References
 
 [1] Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments, 2017, [arxiv.org/pdf/1706.02275.pdf](https://arxiv.org/pdf/1706.02275.pdf)  
