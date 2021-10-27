@@ -85,7 +85,7 @@ A summary of the hyperparameters used to solve the environment is given in the f
 - `actor hidden neurons per hidden layer = 64`
 - `critic number of hidden layers = 3`
 - `critic hidden neurons per hidden layer = 64`
-- `use batch normalization = False` (activating batch normalization decreases the learning performance)
+- `use batch normalization = False` (activating batch normalization astonishingly decreases the learning performance)
 
 ### Agent
 - `α = The learning rate, where higher values mean that the multi-agent learns faster`
