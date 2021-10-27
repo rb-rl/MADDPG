@@ -88,11 +88,12 @@ The suggested improvements are the following ones:
 - Modification of amount past is covered by observation space: The neural networks provided in this repository are time delay neural networks, because the observations consist of stacks of 3 frames. By storing these frames in a separate memory, it would be easily possible to change the stack size and introduce it as a hyperparameter which could be optimized.
 - Recurrent neural networks: By using recurrent layers, the past states could be handled beyond mere time delay neural networks.
 - Prioritized replay memory: The replay memory used in this project is not prioritized such that there is an improvement option.
-- Distributed Distributional MADDPG: In DDPG, every state, action pair (s,a) has only a single scalar value Q. Distributional approaches extend this by providing a distribution over multiple Q-values. Such an extension is also possible for MADDPG.
-- Twin Delayed Multi-Agent Deep Deterministic (=TD3): DDPG can be extended by using the two action-value functions in a different way, having the policy network being soft-updated at a lower rate than the deep Q-network and by introducing an extra noise in the loss of the critic. This can be generalized to MADDPG.
+- Distributed Distributional MADDPG [3]: In DDPG, every state, action pair (s,a) has only a single scalar value Q. Distributional approaches extend this by providing a distribution over multiple Q-values. Such an extension is also possible for MADDPG.
+- Twin Delayed Multi-Agent Deep Deterministic (=TD3) [3]: DDPG can be extended by using the two action-value functions in a different way, having the policy network being soft-updated at a lower rate than the deep Q-network and by introducing an extra noise in the loss of the critic. This can be generalized to MADDPG.
 - Attention: Primarily used in natural language processing, attention layers could also be explored in this context of this project.
 
 ### References
 
 [1] Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments, 2017, [arxiv.org/pdf/1706.02275.pdf](https://arxiv.org/pdf/1706.02275.pdf)  
 [2] [en.wikipedia.org/wiki/Ornstein–Uhlenbeck_process](https://en.wikipedia.org/wiki/Ornstein–Uhlenbeck_process)  
+[3] [lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html](https://lilianweng.github.io/lil-log/2018/04/08/policy-gradient-algorithms.html)
