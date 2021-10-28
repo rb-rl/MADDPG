@@ -77,14 +77,15 @@ cd MADDPG
   - [Windows (32-bit)](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86.zip)
   - [Windows (64-bit)](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86_64.zip)
   - [Amazon Web Services](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux_NoVis.zip)
+- Unzip the zip file into the folder `MADDPG` (for Windows (64-bit), the `Tennis.exe` in the zip file should have the relative path `MADDPG\Tennis_Windows_x86_64\Tennis.exe`, and for the other environments this path should be similar, but can also be adapted as shown further below)
 - For Amazon Web Services users: You have to deactivate the [virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md) and perform the training in headless mode. For inference, you have to activate the virtual screen and use the Linux Version above
-- Unzip the zip file into the folder `MADDPG` such that the `Tennis.exe` in the zip file has the relative path `MADDPG\Tennis_Windows_x86_64\Tennis.exe`
 - Start a jupyter notebook with the following command:
 ```
 jupyter notebook
 ```
 - Open `Main.ipynb`
 - In the Jupyter notebook, select `Kernel -> Change Kernel -> drlnd`
+- If you are not using Windows (64-bit), search for `UnityEnvironment("Tennis_Windows_x86_64\Tennis.exe")` in the notebook and update the path to the corresponding file of the environment you downloaded above
 
 ## Usage
 
