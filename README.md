@@ -66,7 +66,8 @@ conda install pytorch=0.4.0 -c pytorch
 
 python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
-cd ..\..
+cd ..
+cd ..
 
 git clone git@github.com:rb-rl/MADDPG.git
 cd MADDPG
