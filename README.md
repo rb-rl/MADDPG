@@ -44,7 +44,7 @@ https://user-images.githubusercontent.com/92691697/139140519-32f17d91-a50f-4ad3-
 
 ## Installation
 
-In order to install the project provided in this repository on Windows 10, follow these steps:
+In order to install the project provided in this repository, follow these steps:
 
 - Install a 64-bit version of [Anaconda](https://anaconda.cloud/installers)
 - Open the Anaconda prompt and execute the following commands:
@@ -70,7 +70,14 @@ cd ..\..
 git clone git@github.com:rb-rl/MADDPG.git
 cd MADDPG
 ```
-- Download the [Udacity Unity Tennis environment](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86_64.zip)
+- For Windows users: If you do not know whether you have a 64-bit operating system, you can use this [help](https://support.microsoft.com/en-us/help/827218/how-to-determine-whether-a-computer-is-running-a-32-bit-version-or-64)
+- Download the Udacity Unity Tennis environment matching your environment:
+  - [Linux Version](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux.zip)
+  - [Mac OSX Version Version](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis.app.zip)
+  - [Windows (32-bit) Version](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86.zip)
+  - [Windows (64-bit) Version](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86_64.zip)
+  - [Amazon Web Services](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux_NoVis.zip)
+- For Amazon Web Services users: You have to deactivate the [virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md) and perform the training in headless mode. For inference, you have to activate the virtual screen and use the Linux Version above
 - Unzip the zip file into the folder `MADDPG` such that the `Tennis.exe` in the zip file has the relative path `MADDPG\Tennis_Windows_x86_64\Tennis.exe`
 - Start a jupyter notebook with the following command:
 ```
